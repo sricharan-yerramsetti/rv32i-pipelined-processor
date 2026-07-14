@@ -63,7 +63,7 @@ initial begin
     $display("\n=== MEMORY SNAPSHOT [0x00–0x1F] ===");
     begin : mem_dump
         integer k;
-        for (k = 0; k < 32; k = k + 4) begin
+        for (k = 0; k < 4096; k = k + 4) begin
             $display("  MEM[%2h] = %h %h %h %h  →  word = %h",
                 k,
                 DUT.MEM_INST.mem[k],

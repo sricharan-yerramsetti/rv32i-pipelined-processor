@@ -111,7 +111,6 @@ Branch instructions (`beq`, `bne`, `blt`, etc.) make decisions about the next in
 ├── REG_BANK.v                  # Register file
 ├── SIGN_EXTEND.v                # Immediate sign extension
 ├── IM.hex, MEM.hex, REG_BANK.hex   # Memory initialization files
-└── rv32i_wave.vcd, sim.vvp     # Simulation artifacts (waveform, executable)
 ```
 
 ## Testing & Verification

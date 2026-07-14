@@ -153,19 +153,14 @@ Test coverage includes:
 **Potential enhancements:**
 - Branch prediction with a simple 1-bit or 2-bit predictor
 - Deeper pipeline (7–9 stages) for higher frequency
-- Out-of-order execution with reservation stations for higher IPC
 - L1 instruction/data cache hierarchy for realistic memory latency
 - Floating-point extension (F) for scientific code
-- Atomic instructions (A extension) for multi-threaded programs
-- MMU with TLB for virtual memory support
-- Trap handling (exceptions, interrupts) with CSRs
 
 ## References
 
-- *Computer Architecture: A Quantitative Approach* — Hennessy & Patterson
+- *Computer Organization and Design* — Hennessy & Patterson
 - RISC-V Instruction Set Manual (Volume I: Base ISA)
 - *Digital Design* — M. Morris Mano & Michael D. Ciletti
-- MIT OpenCourseWare – Computer Architecture (6.004)
 - RISC-V GNU Toolchain Documentation
 
 ---

@@ -1,2 +1,2 @@
-iverilog -o rv32i.vvp   top_module.v IF_MODULE.v IF_ID.v ID_EX.v EX_MEM.v MEM_WB.v   CONTROLLER.v ALU.v REG_BANK.v SIGN_EXTEND.v MEM.v   FORWARDING_UNIT.v HAZARD_DETECTION_UNIT.v WB.v   processor_testbench.v
+iverilog -o rv32i.vvp   processor.v IF_MODULE.v IF_ID.v ID_EX.v EX_MEM.v MEM_WB.v   CONTROLLER.v ALU.v REG_BANK.v SIGN_EXTEND.v MEM.v   FORWARDING_UNIT.v HAZARD_DETECTION_UNIT.v WB.v   processor_testbench.v
 

@@ -8,27 +8,27 @@ always #5 clk = ~clk;
 // ── DUT ──────────────────────────────────────────────────────────────────
 top_module DUT(.clk(clk));
 // IF stage
-wire [31:0] pc_if    = DUT.IF_MODULE_INST.pc;
-wire [31:0] inst_if  = DUT.inst_if;
+wire[31:0] pc_if = DUT.IF_MODULE_INST.pc;
+wire[31:0] inst_if = DUT.inst_if;
     
 // ID stage
-wire [31:0] pc_id    = DUT.pc_id;
-wire [31:0] inst_id  = DUT.inst_id;
+wire[31:0] pc_id = DUT.pc_id;
+wire[31:0] inst_id = DUT.inst_id;
     
 // EX stage
-wire [31:0] pc_ex    = DUT.pc_ex;
-wire [3:0]  alu_op   = DUT.ALU_OP_ex;
-wire [31:0] result   = DUT.result_alu;
+wire[31:0] pc_ex = DUT.pc_ex;
+wire[3:0]  alu_op = DUT.ALU_OP_ex;
+wire[31:0] result = DUT.result_alu;
 
 // WB stage
-wire        we_wb    = DUT.WE_wb;
-wire [4:0]  rd_wb    = DUT.rd_wb;
-wire [31:0] rd_data  = DUT.rd_data_wb;
+wire we_wb = DUT.WE_wb;
+wire[4:0] rd_wb = DUT.rd_wb;
+wire[31:0] rd_data = DUT.rd_data_wb;
 
 // Hazard / forwarding
-wire        hazard   = DUT.HAZARD;
-wire        freeze   = DUT.FREEZE;
-wire [1:0]  pc_src   = DUT.PC_SRC;
+wire hazard = DUT.HAZARD;
+wire freeze = DUT.FREEZE;
+wire[1:0] pc_src = DUT.PC_SRC;
 
 
 initial begin

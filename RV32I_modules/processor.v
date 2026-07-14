@@ -23,9 +23,6 @@ wire[3:0] TYPE;
 
 wire[31:0] inst_id;
 wire HAZARD;        //CONTROLLER
-// wire[31:0] result_alu; // REPEATED (Declared above in IF_MODULE)
-
-
 
 // FORWARDING_UNIT
 
@@ -35,7 +32,6 @@ wire HAZARD;        //CONTROLLER
 // HARZARD_DETECTING_UNIT
 
 wire NOP_ID_EX;
-// wire [31:0] imm_id; // REPEATED (Declared at the very top)
 wire [31:0] pc_id;
 wire [4:0] rd_id;       //ID_EX_LATCH
 wire MEM_WRITE_id;
@@ -45,8 +41,6 @@ wire [1:0] OP_2_id;
 wire WE_id;
 wire [31:0] rs1_data_id;
 wire [31:0] rs2_data_id;
-// wire [4:0] rs1_id;  // REPEATED (Declared above in REG_BANK)
-// wire [4:0] rs2_id;  // REPEATED (Declared above in REG_BANK)
 wire MEM_READ_id;
 wire MEM_WRITE_SEL_id;
 
@@ -66,10 +60,8 @@ wire[4:0] rs2_ex;
 wire[31:0] jump_addr;
 
 wire[4:0] rd_ex;
-// wire[31:0] result_alu; // REPEATED (Declared above in IF_MODULE)
 wire MEM_WRITE_ex;
 wire WE_ex;             // EX_MEM_LATCH
-// wire[31:0] rs2_data_ex; // REPEATED (Declared above in ALU)
 wire MEM_READ_ex;
 wire MEM_WRITE_SEL_ex;
 
@@ -80,7 +72,6 @@ wire MEM_WRITE_mem;
 
 wire WE_mem;
 wire[4:0] rd_mem;
-// wire result_mem;         // REPEATED (Declared above in MEM) , MEM_WB_LATCH
 wire[31:0] mem_data_mem;
 wire MEM_WRITE_SEL_mem;
 
